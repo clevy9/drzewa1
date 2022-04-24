@@ -16,7 +16,7 @@
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
+  overflow: scroll;
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
@@ -94,7 +94,7 @@
   .fr-view pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    overflow: visible; }
+    overflow: scroll; }
 /*  .fr-view[dir="rtl"] blockquote {
     border-left: none;
     border-right: solid 2px #5E35B1;
@@ -449,7 +449,7 @@ img {
   border-style: none;
 }
 svg:not(:root) {
-  overflow: hidden;
+  overflow: scroll;
 }
 code,
 kbd,
@@ -461,7 +461,7 @@ samp {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
+  overflow: scroll;
 }
 button,
 input,
@@ -477,7 +477,7 @@ optgroup {
 }
 button,
 input {
-  overflow: visible;
+  overflow: scroll;
 }
 button,
 select {
@@ -516,7 +516,7 @@ legend {
   white-space: normal;
 }
 textarea {
-  overflow: auto;
+  overflow: scroll;
 }
 [type="checkbox"],
 [type="radio"] {
@@ -569,7 +569,7 @@ ol {
   height: 100%;
 }
 .u-background-effect {
-  overflow: hidden;
+  overflow: scroll;
 }
 .u-background-effect ~ .u-container-layout {
   cursor: pointer;
@@ -935,7 +935,7 @@ ol {
   transform: scale(1);
 }
 .u-effect-hover-liftUp > .u-background-effect {
-  overflow: visible;
+  overflow: scroll;
 }
 .u-effect-hover-liftUp .u-back-slide,
 .u-effect-hover-liftUp .u-background-effect-image {
@@ -2002,12 +2002,12 @@ a {
 }
 html {
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 body {
   height: auto;
-  min-height: none;
+  min-height: auto;
 }
 body,
 aside,
@@ -5491,7 +5491,7 @@ ul.u-text li:last-child {
 }
 @media (min-width: 1400px) {
   .u-text-default-xxl {
-    display: table;
+    display: block;
     align-self: flex-start;
   }
   .u-text-default-xxl:empty {
@@ -5501,7 +5501,7 @@ ul.u-text li:last-child {
 }
 @media (min-width: 1200px) {
   .u-xl-mode .u-text-default-xl {
-    display: table;
+    display: block;
     align-self: flex-start;
   }
   .u-xl-mode .u-text-default-xl:empty {
@@ -5565,18 +5565,18 @@ ul.u-text li:last-child {
   object-fit: cover;
   display: block;
   vertical-align: middle;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 100% 100%;
+  background-repeat: repeat;
 }
 img.u-image,
 .u-video-poster {
-  overflow: hidden;
+  overflow: scroll;
 }
 .u-back-image.u-image-contain,
 .u-image.u-image-contain {
-  object-fit: contain;
-  background-size: contain;
+  object-fit: auto;
+  background-size: auto;
 }
 .u-back-image.u-image-tiles,
 .u-image.u-image-tiles {
@@ -5591,7 +5591,7 @@ section.u-image:not(.u-hover-box),
   overflow: visible;
 }
 .u-text .u-image {
-  display: inline-block;
+  display: inline;
 }
 .u-post-content .u-image {
   margin-bottom: 0.5rem;
@@ -15232,7 +15232,7 @@ div.u-video,
   top: 0 !important;
   bottom: 0 !important;
   position: fixed !important;
-  overflow: hidden;
+  overflow: scroll;
   width: 0;
 }
 .u-enable-responsive .menu-collapse {
@@ -15328,7 +15328,7 @@ div.u-video,
   height: -webkit-fill-available;
 }
 .u-sidenav-overflow {
-  overflow: auto;
+  overflow: scroll;
   position: absolute !important;
   top: 0;
   bottom: 0;
